@@ -31,20 +31,6 @@ guardrails:                    # how I work
   - measure quality and cost before calling it done
 ```
 
-### 🧩 What a typical system of mine looks like
-
-```mermaid
-flowchart LR
-    U([Request]) --> G{Intent Gate}
-    G --> S[Supervisor]
-    S <--> K[Knowledge Agent<br/>RAG]
-    S <--> T[Tool Agent<br/>MCP]
-    S <--> C[Config Agent<br/>Plan & Execute]
-    C -.-> H{{Human approval}}
-    S --> Y[Synthesis] --> P[Compliance] --> R([Answer])
-    E[(Eval set · OTel traces)] -.-> S
-```
-
 ### 🚀 Selected work
 
 | Project | What I built | Result |
@@ -56,15 +42,21 @@ flowchart LR
 
 ### 🛠️ Toolbox
 
-<p>
-  <img src="https://skillicons.dev/icons?i=py,java,cpp,ts,fastapi,spring,react,postgres,redis,mysql,docker,kubernetes,linux&perline=13" />
-</p>
+**AI-native dev** · spec-driven, from design to code review<br>
+![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=claude&logoColor=white)
+![Codex](https://img.shields.io/badge/Codex-000000?style=flat-square&logo=openai&logoColor=white)
+![OpenCode](https://img.shields.io/badge/OpenCode-2B2B2B?style=flat-square)
+![OpenSpec](https://img.shields.io/badge/OpenSpec-3E63DD?style=flat-square)
 
+**Agent stack**<br>
 ![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
 ![MCP](https://img.shields.io/badge/MCP-000?style=flat-square)
 ![Milvus](https://img.shields.io/badge/Milvus-00A1EA?style=flat-square&logo=milvus&logoColor=white)
 ![pgvector](https://img.shields.io/badge/pgvector-336791?style=flat-square&logo=postgresql&logoColor=white)
 ![DeepEval](https://img.shields.io/badge/DeepEval-6E56CF?style=flat-square)
 ![OpenTelemetry](https://img.shields.io/badge/OpenTelemetry-425CC7?style=flat-square&logo=opentelemetry&logoColor=white)
+
+**Languages & infra**<br>
+<img src="https://skillicons.dev/icons?i=py,java,cpp,ts,fastapi,spring,react,postgres,redis,mysql,docker,kubernetes,linux&perline=13" />
 
 <sub>🎓 M.S. Shenzhen University × Huawei joint program · B.S. Guangzhou University (ranked 1/102)</sub>
